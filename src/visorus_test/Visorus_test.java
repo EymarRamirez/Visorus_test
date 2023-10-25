@@ -13,7 +13,7 @@ public class Visorus_test {
         view_inicio view = new view_inicio();
         view.setVisible(true);
         
-        
+        System.out.println("");
     }
     
 }
