@@ -1,0 +1,25 @@
+CREATE DATABASE visorus_test;
+
+CREATE TABLE categoria (
+    clave VARCHAR PRIMARY KEY,
+    fecha_creado BIGINT,
+    nombre VARCHAR,
+    activo BOOLEAN
+);
+
+CREATE TABLE articulo (
+    clave VARCHAR PRIMARY KEY,
+    categoria_clave VARCHAR,
+    nombre VARCHAR,
+    activo BOOLEAN
+);
+
+CREATE TABLE precio (
+    precio FLOAT,
+    articulo_clave VARCHAR
+);
+
+CREATE TABLE codigo_de_barras (
+    codigo VARCHAR,
+    articulo_clave VARCHAR
+);
